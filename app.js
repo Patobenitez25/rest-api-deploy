@@ -29,6 +29,7 @@ app.use(cors({
     }
 }))
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 //Todos los recursos que sean movies se identifican con '/movies'
 
