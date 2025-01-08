@@ -1,0 +1,31 @@
+# Recuperar todas las peliculas
+
+GET http://localhost:1234/movies 
+
+### Recuperar peliculas por id
+GET http://localhost:1234/movies/5ad1a235-0d9c-410a-b32b-220d91689a08
+
+### Recuperar todas las peliculas por genero
+GET http://localhost:1234/movies?genre=drama
+
+### Crear una pelicula
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "El caballero",
+    "year": 2003,
+    "director": "Jake Paul",
+    "duration": 115,
+    "poster": "https://img.fruugo.com/product/7/41/14532417_max.jpg",
+    "genre": [
+        "Sci-Fi"
+        ]
+}
+
+### Actualizar una pelicula
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+}
